@@ -1,0 +1,9 @@
+{% for speaker in speakers %}
+    <div>
+        <h3>{{ speaker.name }}</h3>
+        <p>Topic: {{ speaker.topic }}</p>
+        <p>Contact: {{ speaker.contact }}</p>
+        <a href="{{speaker.id}}">See Details</a>
+        <!-- <a href="{{speaker.id}}/{{delete}}">delete</a> -->
+    </div>
+{% endfor %}

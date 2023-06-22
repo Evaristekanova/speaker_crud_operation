@@ -1,0 +1,11 @@
+{% if speaker %}
+<div>
+    <h3>{{ speaker.name }}</h3>
+    <p>Topic: {{ speaker.topic }}</p>
+    <p>Experience: {{ speaker.experience }}</p>
+    <p>Rating: {{ speaker.rating }}</p>
+    <p>Contact: {{ speaker.contact }}</p>
+</div>
+{% else %}
+    <h3>Speaker not found</h3>
+{% endif %}
